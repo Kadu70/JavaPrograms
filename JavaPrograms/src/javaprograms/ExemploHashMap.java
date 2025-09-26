@@ -28,6 +28,16 @@ public class ExemploHashMap {
         System.out.println("\n--- Removendo um aluno ---");
         alunos.remove(103);
         System.out.println("Mapa após remover o aluno 103: " + alunos);
+
+        //05 - adicionando novo aluno, usando a mesma chave
+         alunos.put(103, "Carlos Santos");
+         System.out.println("Mapa após retorno o aluno 103: " + alunos);
+
+         //06 - adicionando outro aluno com matricula mais baixa
+         alunos.put(100, "Ana Paula");
+        //  a lista sempre sera organizada pela chave
+        System.out.println("Mapa após adicionar novo aluno 100: " + alunos);
+         
     }
 }
 

@@ -19,7 +19,28 @@ public class InversorDePalavras {
         //String Array
         String[] strSeparado ;
 
-        System.out.println("Entre com um frase com 3 palavara")
+        //entrada da frase
+        System.out.println("Entre com um frase com 3 palavara");
+        str = in.nextLine();
+
+        //usa o caracter " ", como divisor entre as palavras
+        strSeparado = str.split(" ");
+
+        //verifica se contem 3 palabras
+        if (strSeparado.length!=3){
+            System.out.println("quantidade de palabras errada. só digitar 3 palavras");
+            return;
+        }
+
+
+        // mostrando a frase original
+        System.out.println ("a Frase original eh: " + str );
+
+        //exibe a frase com as posições das palabras alteradas
+        System.out.println ("a Frase invertida: " + strSeparado[2] + " "+strSeparado[0] + " "+strSeparado[1]  );
+
+
+
 
     }
 

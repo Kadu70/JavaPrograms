@@ -62,5 +62,15 @@ public class Produto {
     public int getQtdeemestoque() {
         return qtdeemestoque;
     }
+
+    public String getCodigo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getCodigo'");
+    }
+
+    public char[] getSerialversionuid() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getSerialversionuid'");
+    }
     
 }

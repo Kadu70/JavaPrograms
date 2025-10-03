@@ -51,16 +51,17 @@ public class LeituraArquivoSimples {
                 System.out.print((char) codAscii );
             }
 
-        } catch (IOException e) {
+        } catch (IOException e) {//exceção que pode ocorrer caso tenha alguma falha na abertura e leitura de uma arquivo
             // 3. Trata a exceção em caso de erro (ex: arquivo não encontrado)
             System.err.println("\n--- ERRO de I/O ---");
+            //e-> objeto que tem as ocorrencia de erros da exceção
             System.err.println("Ocorreu um erro ao ler o arquivo: " + e.getMessage());
-        } finally {
+        } finally {// esse bloco será executado idependente se ocorreu ou não um erro (excecao)
             // O bloco finally garante que o recurso (FileReader) será fechado,
             // independentemente de ter ocorrido uma exceção ou não.
             try {
-                if (leitor != null) {
-                    leitor.close();
+                if (leitor != null) {//verifica se o objeto que contem o arquivo realmente esta ativo
+                    leitor.close();//fecha o arquivo liberando ele na memoria
                     System.out.println("\n\nLeitor de arquivo fechado com sucesso.");
                 }
             } catch (IOException e) {
